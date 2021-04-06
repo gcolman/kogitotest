@@ -1,0 +1,253 @@
+{
+  "apiVersion" : "v1",
+  "kind" : "ServiceAccount",
+  "metadata" : {
+    "annotations" : {
+      "app.quarkus.io/build-timestamp" : "2021-04-06 - 12:00:06 +0000",
+      "app.opesnhift.io/vcs-url" : "https://github.com/gcolman/kogitotest.git",
+      "app.quarkus.io/commit-id" : "f2f78d26aeac81e2e791c0ced37f530a5ffb55aa",
+      "app.quarkus.io/vcs-url" : "https://github.com/gcolman/kogitotest.git"
+    },
+    "labels" : {
+      "app.kubernetes.io/name" : "kogitotest",
+      "app.kubernetes.io/version" : "1.0-SNAPSHOT",
+      "app" : "smart-meter-rules",
+      "app.openshift.io/runtime" : "quarkus"
+    },
+    "name" : "kogitotest"
+  }
+}{
+  "apiVersion" : "v1",
+  "kind" : "Service",
+  "metadata" : {
+    "annotations" : {
+      "app.quarkus.io/build-timestamp" : "2021-04-06 - 12:00:06 +0000",
+      "app.opesnhift.io/vcs-url" : "https://github.com/gcolman/kogitotest.git",
+      "app.quarkus.io/commit-id" : "f2f78d26aeac81e2e791c0ced37f530a5ffb55aa",
+      "app.quarkus.io/vcs-url" : "https://github.com/gcolman/kogitotest.git"
+    },
+    "labels" : {
+      "app.kubernetes.io/name" : "kogitotest",
+      "app.kubernetes.io/version" : "1.0-SNAPSHOT",
+      "app" : "smart-meter-rules",
+      "app.openshift.io/runtime" : "quarkus"
+    },
+    "name" : "kogitotest"
+  },
+  "spec" : {
+    "ports" : [ {
+      "name" : "http",
+      "port" : 8080,
+      "targetPort" : 8080
+    } ],
+    "selector" : {
+      "app.kubernetes.io/name" : "kogitotest",
+      "app.kubernetes.io/version" : "1.0-SNAPSHOT"
+    },
+    "type" : "ClusterIP"
+  }
+}{
+  "apiVersion" : "image.openshift.io/v1",
+  "kind" : "ImageStream",
+  "metadata" : {
+    "annotations" : {
+      "app.quarkus.io/build-timestamp" : "2021-04-06 - 12:00:06 +0000",
+      "app.opesnhift.io/vcs-url" : "https://github.com/gcolman/kogitotest.git",
+      "app.quarkus.io/commit-id" : "f2f78d26aeac81e2e791c0ced37f530a5ffb55aa",
+      "app.quarkus.io/vcs-url" : "https://github.com/gcolman/kogitotest.git"
+    },
+    "labels" : {
+      "app.kubernetes.io/name" : "kogitotest",
+      "app.kubernetes.io/version" : "1.0-SNAPSHOT",
+      "app" : "smart-meter-rules",
+      "app.openshift.io/runtime" : "quarkus"
+    },
+    "name" : "kogitotest"
+  },
+  "spec" : { }
+}{
+  "apiVersion" : "image.openshift.io/v1",
+  "kind" : "ImageStream",
+  "metadata" : {
+    "annotations" : {
+      "app.quarkus.io/build-timestamp" : "2021-04-06 - 12:00:06 +0000",
+      "app.opesnhift.io/vcs-url" : "https://github.com/gcolman/kogitotest.git",
+      "app.quarkus.io/commit-id" : "f2f78d26aeac81e2e791c0ced37f530a5ffb55aa",
+      "app.quarkus.io/vcs-url" : "https://github.com/gcolman/kogitotest.git"
+    },
+    "labels" : {
+      "app.kubernetes.io/name" : "kogitotest",
+      "app.kubernetes.io/version" : "1.0-SNAPSHOT",
+      "app" : "smart-meter-rules",
+      "app.openshift.io/runtime" : "quarkus"
+    },
+    "name" : "s2i-java"
+  },
+  "spec" : {
+    "dockerImageRepository" : "fabric8/s2i-java"
+  }
+}{
+  "apiVersion" : "image.openshift.io/v1",
+  "kind" : "ImageStream",
+  "metadata" : {
+    "annotations" : {
+      "app.quarkus.io/build-timestamp" : "2021-04-06 - 12:00:06 +0000",
+      "app.opesnhift.io/vcs-url" : "https://github.com/gcolman/kogitotest.git",
+      "app.quarkus.io/commit-id" : "f2f78d26aeac81e2e791c0ced37f530a5ffb55aa",
+      "app.quarkus.io/vcs-url" : "https://github.com/gcolman/kogitotest.git"
+    },
+    "labels" : {
+      "app.kubernetes.io/name" : "kogitotest",
+      "app.kubernetes.io/version" : "1.0-SNAPSHOT",
+      "app" : "smart-meter-rules",
+      "app.openshift.io/runtime" : "quarkus"
+    },
+    "name" : "s2i-java"
+  },
+  "spec" : {
+    "dockerImageRepository" : "fabric8/s2i-java"
+  }
+}{
+  "apiVersion" : "build.openshift.io/v1",
+  "kind" : "BuildConfig",
+  "metadata" : {
+    "annotations" : {
+      "app.quarkus.io/build-timestamp" : "2021-04-06 - 12:00:06 +0000",
+      "app.opesnhift.io/vcs-url" : "https://github.com/gcolman/kogitotest.git",
+      "app.quarkus.io/commit-id" : "f2f78d26aeac81e2e791c0ced37f530a5ffb55aa",
+      "app.quarkus.io/vcs-url" : "https://github.com/gcolman/kogitotest.git"
+    },
+    "labels" : {
+      "app.kubernetes.io/name" : "kogitotest",
+      "app.kubernetes.io/version" : "1.0-SNAPSHOT",
+      "app" : "smart-meter-rules",
+      "app.openshift.io/runtime" : "quarkus"
+    },
+    "name" : "kogitotest"
+  },
+  "spec" : {
+    "output" : {
+      "to" : {
+        "kind" : "ImageStreamTag",
+        "name" : "kogitotest:1.0-SNAPSHOT"
+      }
+    },
+    "source" : {
+      "binary" : { }
+    },
+    "strategy" : {
+      "sourceStrategy" : {
+        "from" : {
+          "kind" : "ImageStreamTag",
+          "name" : "s2i-java:2.3"
+        }
+      }
+    }
+  }
+}{
+  "apiVersion" : "apps.openshift.io/v1",
+  "kind" : "DeploymentConfig",
+  "metadata" : {
+    "annotations" : {
+      "app.quarkus.io/build-timestamp" : "2021-04-06 - 12:00:06 +0000",
+      "app.opesnhift.io/vcs-url" : "https://github.com/gcolman/kogitotest.git",
+      "app.quarkus.io/commit-id" : "f2f78d26aeac81e2e791c0ced37f530a5ffb55aa",
+      "app.quarkus.io/vcs-url" : "https://github.com/gcolman/kogitotest.git"
+    },
+    "labels" : {
+      "app.kubernetes.io/name" : "kogitotest",
+      "app.kubernetes.io/version" : "1.0-SNAPSHOT",
+      "app" : "smart-meter-rules",
+      "app.openshift.io/runtime" : "quarkus"
+    },
+    "name" : "kogitotest"
+  },
+  "spec" : {
+    "replicas" : 1,
+    "selector" : {
+      "app.kubernetes.io/name" : "kogitotest",
+      "app.kubernetes.io/version" : "1.0-SNAPSHOT"
+    },
+    "template" : {
+      "metadata" : {
+        "annotations" : {
+          "app.quarkus.io/build-timestamp" : "2021-04-06 - 12:00:06 +0000",
+          "app.opesnhift.io/vcs-url" : "https://github.com/gcolman/kogitotest.git",
+          "app.quarkus.io/commit-id" : "f2f78d26aeac81e2e791c0ced37f530a5ffb55aa",
+          "app.quarkus.io/vcs-url" : "https://github.com/gcolman/kogitotest.git"
+        },
+        "labels" : {
+          "app.kubernetes.io/name" : "kogitotest",
+          "app.kubernetes.io/version" : "1.0-SNAPSHOT",
+          "app" : "smart-meter-rules",
+          "app.openshift.io/runtime" : "quarkus"
+        }
+      },
+      "spec" : {
+        "containers" : [ {
+          "env" : [ {
+            "name" : "KUBERNETES_NAMESPACE",
+            "valueFrom" : {
+              "fieldRef" : {
+                "fieldPath" : "metadata.namespace"
+              }
+            }
+          }, {
+            "name" : "JAVA_APP_JAR",
+            "value" : "/deployments/kogitotest-1.0-SNAPSHOT-runner.jar"
+          }, {
+            "name" : "JAVA_LIB_DIR",
+            "value" : "/deployments/lib"
+          }, {
+            "name" : "JAVA_CLASSPATH",
+            "value" : "/deployments/lib/jakarta.el.jakarta.el-api-3.0.3.jar:/deployments/lib/jakarta.interceptor.jakarta.interceptor-api-1.2.5.jar:/deployments/lib/jakarta.enterprise.jakarta.enterprise.cdi-api-2.0.2.jar:/deployments/lib/jakarta.inject.jakarta.inject-api-1.0.jar:/deployments/lib/io.smallrye.config.smallrye-config-common-1.7.0.jar:/deployments/lib/io.smallrye.config.smallrye-config-1.7.0.jar:/deployments/lib/org.jboss.logging.jboss-logging-3.3.2.Final.jar:/deployments/lib/org.jboss.logmanager.jboss-logmanager-embedded-1.0.4.jar:/deployments/lib/org.jboss.logging.jboss-logging-annotations-2.1.0.Final.jar:/deployments/lib/org.jboss.threads.jboss-threads-3.0.1.Final.jar:/deployments/lib/org.slf4j.slf4j-api-1.7.25.jar:/deployments/lib/org.jboss.slf4j.slf4j-jboss-logging-1.2.0.Final.jar:/deployments/lib/org.graalvm.sdk.graal-sdk-19.3.1.jar:/deployments/lib/org.wildfly.common.wildfly-common-1.5.4.Final-format-001.jar:/deployments/lib/io.quarkus.quarkus-core-1.3.0.Final.jar:/deployments/lib/org.jboss.jandex-2.1.2.Final.jar:/deployments/lib/org.ow2.asm.asm-7.3.1.jar:/deployments/lib/org.ow2.asm.asm-tree-7.3.1.jar:/deployments/lib/org.ow2.asm.asm-analysis-7.3.1.jar:/deployments/lib/org.ow2.asm.asm-util-7.3.1.jar:/deployments/lib/io.quarkus.gizmo.gizmo-1.0.2.Final.jar:/deployments/lib/io.quarkus.arc.arc-processor-1.3.0.Final.jar:/deployments/lib/org.kie.kie-dmn-model-7.34.0.Final.jar:/deployments/lib/org.kie.kie-dmn-api-7.34.0.Final.jar:/deployments/lib/org.kie.kogito.kogito-api-0.9.0.jar:/deployments/lib/xmlpull.xmlpull-1.1.3.1.jar:/deployments/lib/xpp3.xpp3_min-1.1.4c.jar:/deployments/lib/com.thoughtworks.xstream.xstream-1.4.11.1.jar:/deployments/lib/org.kie.kogito.drools-core-0.9.0.jar:/deployments/lib/org.antlr.antlr-runtime-3.5.2.jar:/deployments/lib/org.eclipse.jdt.ecj-3.19.0.jar:/deployments/lib/org.kie.kogito.drools-compiler-0.9.0.jar:/deployments/lib/org.kie.kogito.kogito-ruleunits-0.9.0.jar:/deployments/lib/org.drools.drools-canonical-model-7.34.0.Final.jar:/deployments/lib/org.drools.drools-mvel-parser-7.34.0.Final.jar:/deployments/lib/org.drools.drools-mvel-compiler-7.34.0.Final.jar:/deployments/lib/org.drools.drools-model-compiler-7.34.0.Final.jar:/deployments/lib/org.kie.kogito.kogito-drools-model-0.9.0.jar:/deployments/lib/org.kie.kogito.kogito-drools-0.9.0.jar:/deployments/lib/jakarta.annotation.jakarta.annotation-api-1.3.5.jar:/deployments/lib/org.kie.kogito.drools-core-reflective-0.9.0.jar:/deployments/lib/org.kie.kogito.kogito-internal-0.9.0.jar:/deployments/lib/org.kie.kogito.drools-core-static-0.9.0.jar:/deployments/lib/org.kie.kogito.kogito-services-0.9.0.jar:/deployments/lib/com.google.protobuf.protobuf-java-3.6.1.jar:/deployments/lib/org.mvel.mvel2-2.4.4.Final.jar:/deployments/lib/org.kie.kogito.jbpm-flow-0.9.0.jar:/deployments/lib/com.fasterxml.jackson.core.jackson-databind-2.10.3.jar:/deployments/lib/org.kie.soup.kie-soup-commons-7.34.0.Final.jar:/deployments/lib/org.kie.kie-dmn-backend-7.34.0.Final.jar:/deployments/lib/ch.obermuhlner.big-math-2.0.1.jar:/deployments/lib/org.kie.kie-dmn-feel-7.34.0.Final.jar:/deployments/lib/com.github.javaparser.javaparser-core-3.13.10.jar:/deployments/lib/org.antlr.antlr4-runtime-4.7.2.jar:/deployments/lib/org.jpmml.pmml-agent-1.4.11.jar:/deployments/lib/org.jpmml.pmml-model-1.4.11.jar:/deployments/lib/org.kie.kie-dmn-core-7.34.0.Final.jar:/deployments/lib/org.kie.kogito.kogito-dmn-0.9.0.jar:/deployments/lib/org.kie.kogito.kogito-quarkus-0.9.0.jar:/deployments/lib/io.quarkus.quarkus-development-mode-spi-1.3.0.Final.jar:/deployments/lib/io.quarkus.security.quarkus-security-1.0.1.Final.jar:/deployments/lib/io.netty.netty-codec-4.1.45.Final.jar:/deployments/lib/io.netty.netty-handler-4.1.45.Final.jar:/deployments/lib/io.quarkus.quarkus-netty-1.3.0.Final.jar:/deployments/lib/io.netty.netty-common-4.1.45.Final.jar:/deployments/lib/io.netty.netty-buffer-4.1.45.Final.jar:/deployments/lib/io.netty.netty-transport-4.1.45.Final.jar:/deployments/lib/io.netty.netty-codec-socks-4.1.45.Final.jar:/deployments/lib/io.netty.netty-handler-proxy-4.1.45.Final.jar:/deployments/lib/io.netty.netty-codec-http-4.1.45.Final.jar:/deployments/lib/io.netty.netty-codec-http2-4.1.45.Final.jar:/deployments/lib/io.netty.netty-resolver-4.1.45.Final.jar:/deployments/lib/io.netty.netty-codec-dns-4.1.45.Final.jar:/deployments/lib/io.netty.netty-resolver-dns-4.1.45.Final.jar:/deployments/lib/io.vertx.vertx-core-3.8.5.jar:/deployments/lib/io.quarkus.quarkus-vertx-core-1.3.0.Final.jar:/deployments/lib/io.vertx.vertx-web-common-3.8.5.jar:/deployments/lib/io.vertx.vertx-auth-common-3.8.5.jar:/deployments/lib/io.vertx.vertx-bridge-common-3.8.5.jar:/deployments/lib/io.vertx.vertx-web-3.8.5.jar:/deployments/lib/io.quarkus.quarkus-vertx-http-1.3.0.Final.jar:/deployments/lib/org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec-1.0.1.Final.jar:/deployments/lib/org.jboss.resteasy.resteasy-core-spi-4.5.2.Final.jar:/deployments/lib/org.reactivestreams.reactive-streams-1.0.3.jar:/deployments/lib/org.jboss.resteasy.resteasy-core-4.5.2.Final.jar:/deployments/lib/com.sun.activation.jakarta.activation-1.2.1.jar:/deployments/lib/io.quarkus.quarkus-resteasy-common-1.3.0.Final.jar:/deployments/lib/jakarta.validation.jakarta.validation-api-2.0.2.jar:/deployments/lib/io.quarkus.quarkus-resteasy-server-common-1.3.0.Final.jar:/deployments/lib/io.quarkus.quarkus-resteasy-1.3.0.Final.jar:/deployments/lib/com.fasterxml.jackson.datatype.jackson-datatype-jsr310-2.10.3.jar:/deployments/lib/com.fasterxml.jackson.datatype.jackson-datatype-jdk8-2.10.2.jar:/deployments/lib/com.fasterxml.jackson.module.jackson-module-parameter-names-2.10.2.jar:/deployments/lib/io.quarkus.quarkus-jackson-1.3.0.Final.jar:/deployments/lib/org.glassfish.jaxb.txw2-2.3.3-b02.jar:/deployments/lib/com.sun.istack.istack-commons-runtime-3.0.10.jar:/deployments/lib/org.glassfish.jaxb.jaxb-runtime-2.3.3-b02.jar:/deployments/lib/org.jboss.resteasy.resteasy-jaxb-provider-4.5.2.Final.jar:/deployments/lib/com.fasterxml.jackson.core.jackson-core-2.10.3.jar:/deployments/lib/com.fasterxml.jackson.core.jackson-annotations-2.10.3.jar:/deployments/lib/com.fasterxml.jackson.jaxrs.jackson-jaxrs-base-2.10.2.jar:/deployments/lib/jakarta.activation.jakarta.activation-api-1.2.1.jar:/deployments/lib/com.fasterxml.jackson.module.jackson-module-jaxb-annotations-2.10.2.jar:/deployments/lib/com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider-2.10.2.jar:/deployments/lib/com.github.fge.btf-1.2.jar:/deployments/lib/com.github.fge.msg-simple-1.1.jar:/deployments/lib/com.github.fge.jackson-coreutils-1.6.jar:/deployments/lib/com.github.fge.json-patch-1.9.jar:/deployments/lib/com.google.guava.failureaccess-1.0.1.jar:/deployments/lib/com.google.guava.listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/deployments/lib/org.checkerframework.checker-qual-2.5.2.jar:/deployments/lib/com.google.guava.guava-27.0.1-jre.jar:/deployments/lib/org.jboss.resteasy.resteasy-jackson2-provider-4.5.2.Final.jar:/deployments/lib/org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec-2.0.0.Final.jar:/deployments/lib/io.quarkus.quarkus-resteasy-jackson-1.3.0.Final.jar:/deployments/lib/org.eclipse.microprofile.openapi.microprofile-openapi-api-1.1.2.jar:/deployments/lib/org.eclipse.microprofile.config.microprofile-config-api-1.4.jar:/deployments/lib/org.yaml.snakeyaml-1.25.jar:/deployments/lib/com.fasterxml.jackson.dataformat.jackson-dataformat-yaml-2.10.3.jar:/deployments/lib/io.smallrye.smallrye-open-api-1.2.1.jar:/deployments/lib/io.quarkus.quarkus-swagger-ui-1.3.0.Final.jar:/deployments/lib/io.quarkus.quarkus-smallrye-openapi-1.3.0.Final.jar:/deployments/lib/jakarta.transaction.jakarta.transaction-api-1.3.3.jar:/deployments/lib/io.quarkus.arc.arc-1.3.0.Final.jar:/deployments/lib/org.eclipse.microprofile.context-propagation.microprofile-context-propagation-api-1.0.1.jar:/deployments/lib/io.quarkus.quarkus-arc-1.3.0.Final.jar:/deployments/lib/io.quarkus.quarkus-kubernetes-client-internal-1.3.0.Final.jar:/deployments/lib/io.quarkus.quarkus-openshift-1.3.0.Final.jar"
+          }, {
+            "name" : "JAVA_OPTIONS",
+            "value" : "-Dquarkus.http.host=0.0.0.0  -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
+          } ],
+          "image" : "gcolman/kogitotest:1.0-SNAPSHOT",
+          "imagePullPolicy" : "IfNotPresent",
+          "name" : "kogitotest",
+          "ports" : [ {
+            "containerPort" : 8080,
+            "name" : "http",
+            "protocol" : "TCP"
+          } ]
+        } ],
+        "serviceAccount" : "kogitotest"
+      }
+    },
+    "triggers" : [ {
+      "imageChangeParams" : {
+        "automatic" : true,
+        "containerNames" : [ "kogitotest" ],
+        "from" : {
+          "kind" : "ImageStreamTag",
+          "name" : "kogitotest:1.0-SNAPSHOT"
+        }
+      },
+      "type" : "ImageChange"
+    } ]
+  }
+}{
+  "apiVersion" : "route.openshift.io/v1",
+  "kind" : "Route",
+  "metadata" : {
+    "labels" : {
+      "app.kubernetes.io/name" : "kogitotest",
+      "app.kubernetes.io/version" : "1.0-SNAPSHOT"
+    },
+    "name" : "kogitotest"
+  },
+  "spec" : {
+    "host" : "",
+    "path" : "/",
+    "port" : {
+      "targetPort" : 8080
+    },
+    "to" : {
+      "kind" : "Service",
+      "name" : "kogitotest"
+    }
+  }
+}
