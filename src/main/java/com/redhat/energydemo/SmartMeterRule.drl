@@ -1,0 +1,17 @@
+package com.redhat.energydemo;
+//Unit definition
+unit EnergyRuleUnit;
+
+import com.redhat.energydemo.model.SmartMeterEvent;
+
+rule "Is Poweron"
+when
+    $e: /events[eventType == "powerOn"];
+then
+    $e.setPowerOn(true);
+end
+
+
+query "event"
+    $e: /events;
+end
